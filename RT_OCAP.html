@@ -2,8 +2,7 @@
 <meta charset="utf-8">
 <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport">
 <title>RT_OCAP工具</title>
-<style id="rt-ocap-clean-merged-style">
-:root{--bg:#eef2f7;--card:#fff;--line:#d7deea;--text:#102033;--muted:#6b778c;--blue:#2563eb;--green:#16a34a;--red:#dc2626;--orange:#ea580c;--purple:#7c3aed;--shadow:0 8px 18px rgba(15,23,42,.06);--radius:16px;}
+<style id="rt-ocap-clean-merged-style">:root{--bg:#eef2f7;--card:#fff;--line:#d7deea;--text:#102033;--muted:#6b778c;--blue:#2563eb;--green:#16a34a;--red:#dc2626;--orange:#ea580c;--purple:#7c3aed;--shadow:0 8px 18px rgba(15,23,42,.06);--radius:16px;}
 *{
   box-sizing:border-box;
 }
@@ -2272,266 +2271,271 @@ body.editorActive #topbarCenterWrap #jsonTopExportBtn{
   background:#fff5f5;
   border-color:#fecaca;
 }
-@media (max-width:1100px){
-  .editorGrid{
-    grid-template-columns:1fr;
-    height:auto;
-  }
-  .graphWrap{
-    min-height:64vh;
-  }
-  .ocapGrid{
-    grid-template-columns:1fr;
-  }
-}
+
+
+/* ===== Responsive breakpoints: 1024 / 850 / 520 ===== */
 @media (max-width:1024px){
+  .editorGrid{
+      grid-template-columns:1fr;
+      height:auto;
+    }
+    .graphWrap{
+      min-height:64vh;
+    }
+    .ocapGrid{
+      grid-template-columns:1fr;
+    }
   #jsonTopExportBtn,.jsonTopExportBtn,.titleExportBtn{
-    display:none;
-  }
-  .gearEditBtn{
-    display:none!important;
-  }
-  .titleExportBtn{
-    display:none;
-  }
-  #view-editor{
-    display:none!important;
-  }
-  .mobileEditWarning{
-    display:block;
-  }
+      display:none;
+    }
+    .gearEditBtn{
+      display:none!important;
+    }
+    .titleExportBtn{
+      display:none;
+    }
+    #view-editor{
+      display:none!important;
+    }
+    .mobileEditWarning{
+      display:block;
+    }
 }
-@media (max-width:820px){
+@media (max-width:850px){
   .homeTitle{
-    font-size:20px;
-    font-weight:900;
-    margin:0 0 4px 0;
-  }
-  .runnerTitle{
-    font-size:30px;
-  }
-  .runnerText{
-    font-size:16px;
-  }
-  .runBtn{
-    font-size:22px;
-    min-height:62px;
-  }
-  .grid2,.formGrid{
-    grid-template-columns:1fr;
-  }
-  .flowPick{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-  .node{
-    width:220px;
-  }
-  .graphScene{
-    min-width:1000px;
-    min-height:850px;
-  }
-  .gearEditBtn,.titleExportBtn{
-    display:none;
-  }
-  .topnav{
-    gap:4px!important;
-  }
-  .topnav button,.topnav .pill,.topnav a{
-    white-space:nowrap!important;
-    padding:4px 8px!important;
-    font-size:13px!important;
-  }
-  #jsonTopExportBtn.rtOcapStableExportBtn{
-    display:none;
-  }
-  .runnerAttachBtn{
-    width:100%;
-    justify-content:center;
-  }
-  .runnerAttachPanel{
-    font-size:14px;
-  }
-  .runnerAttachPanel img{
-    max-height:220px;
-  }
-  .runnerCard{
-    padding-top:44px!important;
-  }
-  #runnerAttachWrap.runnerAttachWrap{
-    top:10px!important;
-    right:10px!important;
-  }
-  #runnerAttachWrap .runnerAttachBtn{
-    width:42px!important;
-    height:42px!important;
-    min-width:42px!important;
-  }
-  #runnerAttachWrap .runnerAttachPanel{
-    top:50px!important;
-    right:-2px!important;
-    width:calc(100vw - 28px)!important;
-  }
-  .gearEditBtn{
-    flex:0 0 40px!important;
-    grid-area:gear!important;
-    margin:0!important;
-    width:38px!important;
-    height:38px!important;
-    min-width:38px!important;
-    font-size:20px!important;
-  }
-  #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"]{
-    display:grid!important;
-    grid-template-columns:1fr 1fr!important;
-    gap:10px!important;
-    margin-top:14px!important;
-  }
-  #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"] .btn{
-    width:100%!important;
-    min-height:44px!important;
-    border-radius:14px!important;
-    font-size:15px!important;
-    justify-content:center!important;
-  }
-  #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"] .btn:first-child{
-    grid-column:1 / -1!important;
-  }
-  #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"] .btn.r{
-    grid-column:1 / -1!important;
-    background:#f4511e!important;
-    border-color:#f4511e!important;
-    color:#fff!important;
-  }
-  .selectorHead{
-    align-items:stretch;
-    gap:12px!important;
-  }
-  .selectorHead>div:last-child{
-    display:grid!important;
-    grid-template-columns:1fr 1fr!important;
-    width:100%!important;
-    gap:10px!important;
-  }
-  .selectorHead .btn{
-    width:100%!important;
-    justify-content:center!important;
-  }
-  #view-ocap .ocapGrid,#view-ocap .formGrid{
-    grid-template-columns:1fr!important;
-  }
-  .ocap{
-    padding:10px!important;
-  }
-  #view-ocap .ocapTriple{
-    grid-template-columns:1fr!important;
-    gap:10px!important;
-  }
-  #view-ocap .faPlain{
-    justify-content:flex-start;
-  }
-  #view-ocap .faBox{
-    justify-content:flex-start;
-    padding:0 14px;
-    height:38px!important;
-  }
-  #view-ocap .ocapPartLotRow{
-    grid-template-columns:1fr!important;
-    gap:12px!important;
-  }
-  #view-ocap .lotWithFA{
-    grid-template-columns:auto 1fr!important;
-  }
-  #view-ocap .ocapGrid,#view-ocap .formGrid,#view-ocap .ocapBatchRow{
-    grid-template-columns:1fr!important;
-  }
-  #view-ocap .ocapLotPanel{
-    grid-template-columns:auto 1fr 1fr!important;
-    gap:8px!important;
-    padding:10px!important;
-  }
-  #view-ocap .ocapGrid,#view-ocap .formGrid,#view-ocap .ocapKeyFields{
-    grid-template-columns:1fr!important;
-  }
-  #view-ocap .ocapLotFA input{
-    width:18px!important;
-    height:18px!important;
-  }
-  #view-ocap .ocapLotFA{
-    font-size:14px!important;
-    gap:5px!important;
-  }
-  #view-ocap .ocapLotInputWrap input{
-    height:50px!important;
-    padding:0 9px!important;
-    font-size:14px!important;
-  }
-  #view-ocap.ocap{
-    padding:12px!important;
-  }
-  #view-ocap .ocapActions .btn{
-    font-size:14px!important;
-    padding:0 8px!important;
-    min-height:44px!important;
-  }
-  #view-ocap .formGrid{
-    gap:14px!important;
-    grid-template-columns:1fr!important;
-  }
-  #view-ocap .ocapKeyFields{
-    gap:14px!important;
-    grid-template-columns:1fr!important;
-  }
-  #view-ocap .ocapLotInline{
-    grid-template-columns:62px minmax(104px,1fr) 30px minmax(72px,.72fr)!important;
-  }
-  #view-ocap .ocapActions{
-    gap:8px!important;
-    grid-template-columns:1fr!important;
-  }
-  .topbar{
-    grid-template-columns:auto 1fr auto;
-    padding:8px 10px;
-    min-height:56px;
-    overflow:hidden;
-  }
-  .topbar-center{
-    gap:8px;
-    justify-self:flex-start;
-    justify-content:flex-start;
-  }
-  .brand{
-    font-size:16px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-  }
-  #jsonTopExportBtn,.jsonTopExportBtn,.titleExportBtn{
-    display:none;
-  }
-  .historyResultList{
-    gap:5px;
-  }
-  .historyCardHeader{
-    padding:8px 32px 8px 10px;
-  }
-  .historyCompactLine{
-    gap:6px;
-    font-size:12.5px;
-  }
-  .historyCompactDate{
-    font-size:11.5px;
-  }
-  .historyCompactMachine{
-    max-width:72px;
-    font-size:11.5px;
-    padding:1px 6px;
-  }
-  .historyDetailGrid{
-    grid-template-columns:1fr;
-  }
-  .historyCardDetails{
-    padding:11px 10px 13px;
-  }
+      font-size:20px;
+      font-weight:900;
+      margin:0 0 4px 0;
+    }
+    .runnerTitle{
+      font-size:30px;
+    }
+    .runnerText{
+      font-size:16px;
+    }
+    .runBtn{
+      font-size:22px;
+      min-height:62px;
+    }
+    .grid2,.formGrid{
+      grid-template-columns:1fr;
+    }
+    .flowPick{
+      flex-direction:column;
+      align-items:flex-start;
+    }
+    .node{
+      width:220px;
+    }
+    .graphScene{
+      min-width:1000px;
+      min-height:850px;
+    }
+    .gearEditBtn,.titleExportBtn{
+      display:none;
+    }
+    .topnav{
+      gap:4px!important;
+    }
+    .topnav button,.topnav .pill,.topnav a{
+      white-space:nowrap!important;
+      padding:4px 8px!important;
+      font-size:13px!important;
+    }
+    #jsonTopExportBtn.rtOcapStableExportBtn{
+      display:none;
+    }
+    .runnerAttachBtn{
+      width:100%;
+      justify-content:center;
+    }
+    .runnerAttachPanel{
+      font-size:14px;
+    }
+    .runnerAttachPanel img{
+      max-height:220px;
+    }
+    .runnerCard{
+      padding-top:44px!important;
+    }
+    #runnerAttachWrap.runnerAttachWrap{
+      top:10px!important;
+      right:10px!important;
+    }
+    #runnerAttachWrap .runnerAttachBtn{
+      width:42px!important;
+      height:42px!important;
+      min-width:42px!important;
+    }
+    #runnerAttachWrap .runnerAttachPanel{
+      top:50px!important;
+      right:-2px!important;
+      width:calc(100vw - 28px)!important;
+    }
+    .gearEditBtn{
+      flex:0 0 40px!important;
+      grid-area:gear!important;
+      margin:0!important;
+      width:38px!important;
+      height:38px!important;
+      min-width:38px!important;
+      font-size:20px!important;
+    }
+    #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"]{
+      display:grid!important;
+      grid-template-columns:1fr 1fr!important;
+      gap:10px!important;
+      margin-top:14px!important;
+    }
+    #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"] .btn{
+      width:100%!important;
+      min-height:44px!important;
+      border-radius:14px!important;
+      font-size:15px!important;
+      justify-content:center!important;
+    }
+    #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"] .btn:first-child{
+      grid-column:1 / -1!important;
+    }
+    #view-ocap .card [style*="display:flex"][style*="flex-wrap:wrap"] .btn.r{
+      grid-column:1 / -1!important;
+      background:#f4511e!important;
+      border-color:#f4511e!important;
+      color:#fff!important;
+    }
+    .selectorHead{
+      align-items:stretch;
+      gap:12px!important;
+    }
+    .selectorHead>div:last-child{
+      display:grid!important;
+      grid-template-columns:1fr 1fr!important;
+      width:100%!important;
+      gap:10px!important;
+    }
+    .selectorHead .btn{
+      width:100%!important;
+      justify-content:center!important;
+    }
+    #view-ocap .ocapGrid,#view-ocap .formGrid{
+      grid-template-columns:1fr!important;
+    }
+    .ocap{
+      padding:10px!important;
+    }
+    #view-ocap .ocapTriple{
+      grid-template-columns:1fr!important;
+      gap:10px!important;
+    }
+    #view-ocap .faPlain{
+      justify-content:flex-start;
+    }
+    #view-ocap .faBox{
+      justify-content:flex-start;
+      padding:0 14px;
+      height:38px!important;
+    }
+    #view-ocap .ocapPartLotRow{
+      grid-template-columns:1fr!important;
+      gap:12px!important;
+    }
+    #view-ocap .lotWithFA{
+      grid-template-columns:auto 1fr!important;
+    }
+    #view-ocap .ocapGrid,#view-ocap .formGrid,#view-ocap .ocapBatchRow{
+      grid-template-columns:1fr!important;
+    }
+    #view-ocap .ocapLotPanel{
+      grid-template-columns:auto 1fr 1fr!important;
+      gap:8px!important;
+      padding:10px!important;
+    }
+    #view-ocap .ocapGrid,#view-ocap .formGrid,#view-ocap .ocapKeyFields{
+      grid-template-columns:1fr!important;
+    }
+    #view-ocap .ocapLotFA input{
+      width:18px!important;
+      height:18px!important;
+    }
+    #view-ocap .ocapLotFA{
+      font-size:14px!important;
+      gap:5px!important;
+    }
+    #view-ocap .ocapLotInputWrap input{
+      height:50px!important;
+      padding:0 9px!important;
+      font-size:14px!important;
+    }
+    #view-ocap.ocap{
+      padding:12px!important;
+    }
+    #view-ocap .ocapActions .btn{
+      font-size:14px!important;
+      padding:0 8px!important;
+      min-height:44px!important;
+    }
+    #view-ocap .formGrid{
+      gap:14px!important;
+      grid-template-columns:1fr!important;
+    }
+    #view-ocap .ocapKeyFields{
+      gap:14px!important;
+      grid-template-columns:1fr!important;
+    }
+    #view-ocap .ocapLotInline{
+      grid-template-columns:62px minmax(104px,1fr) 30px minmax(72px,.72fr)!important;
+    }
+    #view-ocap .ocapActions{
+      gap:8px!important;
+      grid-template-columns:1fr!important;
+    }
+    .topbar{
+      grid-template-columns:auto 1fr auto;
+      padding:8px 10px;
+      min-height:56px;
+      overflow:hidden;
+    }
+    .topbar-center{
+      gap:8px;
+      justify-self:flex-start;
+      justify-content:flex-start;
+    }
+    .brand{
+      font-size:16px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+    #jsonTopExportBtn,.jsonTopExportBtn,.titleExportBtn{
+      display:none;
+    }
+    .historyResultList{
+      gap:5px;
+    }
+    .historyCardHeader{
+      padding:8px 32px 8px 10px;
+    }
+    .historyCompactLine{
+      gap:6px;
+      font-size:12.5px;
+    }
+    .historyCompactDate{
+      font-size:11.5px;
+    }
+    .historyCompactMachine{
+      max-width:72px;
+      font-size:11.5px;
+      padding:1px 6px;
+    }
+    .historyDetailGrid{
+      grid-template-columns:1fr;
+    }
+    .historyCardDetails{
+      padding:11px 10px 13px;
+    }
+}
+@media (max-width:520px){
+    .historyRowLine{font-size:12px;}
+    .historyCompactDate{max-width:92px;}
 }
 </style>
 
@@ -17857,6 +17861,120 @@ try{renderGraph();renderInfo();}catch(e){console.warn(e)}
   document.addEventListener('DOMContentLoaded',function(){
     if(window._rtOcapHistoryRecords)window.renderHistoryCards(window._rtOcapHistoryRecords);
   });
+})();
+
+
+/* ==========================================
+   SSoT patch: 歷史回查日期直接使用 GAS Display Value 字串
+   - 不使用 new Date() 重新格式化日期
+   - 不影響 POST / 驗證 / 既有表單送出邏輯
+========================================== */
+(function(){
+  function $id(id){return document.getElementById(id);}
+  function txt(v){return (v===undefined || v===null) ? '' : String(v).trim();}
+  function esc2(v){
+    return txt(v).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function first(r, keys){
+    r = r || {};
+    for(var i=0;i<keys.length;i++){
+      var v = r[keys[i]];
+      if(v !== undefined && v !== null && String(v).trim() !== '') return String(v).trim();
+    }
+    return '';
+  }
+  function rawDate(r){
+    var s = first(r, ['日期']);
+    return s || '未提供日期';
+  }
+  function dateKey(s){
+    s = txt(s);
+    var m = s.match(/^(\d{4})[-\/](\d{1,2})[-\/](\d{1,2})/);
+    if(!m) return null;
+    return Number(m[1]) * 10000 + Number(m[2]) * 100 + Number(m[3]);
+  }
+  function filterDateKeyFromInput(id){
+    return dateKey(($id(id) && $id(id).value) || '');
+  }
+  function row(label, value, multi){
+    var v = esc2(value || '');
+    return '<div class="historyDetailRow" style="display:flex;gap:8px;align-items:flex-start;border-bottom:1px dashed #e2e8f0;padding:5px 0;">'+
+      '<div style="flex:0 0 98px;font-weight:900;color:#526987;">'+esc2(label)+'</div>'+
+      '<div style="flex:1;min-width:0;white-space:'+(multi?'pre-wrap':'normal')+';word-break:break-word;color:#102033;">'+(v || '<span class="muted">未填寫</span>')+'</div>'+
+    '</div>';
+  }
+  function peopleRow(r){
+    return '<div style="display:flex;flex-direction:row;gap:8px;width:100%;margin-top:8px;">'+
+      '<div style="flex:1;min-width:0;border:1px solid #e2e8f0;border-radius:10px;padding:6px;text-align:center;background:#fff;">'+
+        '<div style="font-size:12px;font-weight:900;color:#526987;margin-bottom:3px;">工程</div><div style="font-size:13px;color:#102033;word-break:break-word;">'+(esc2(first(r,['工程檢查人員'])) || '<span class="muted">未填</span>')+'</div></div>'+
+      '<div style="flex:1;min-width:0;border:1px solid #e2e8f0;border-radius:10px;padding:6px;text-align:center;background:#fff;">'+
+        '<div style="font-size:12px;font-weight:900;color:#526987;margin-bottom:3px;">維護</div><div style="font-size:13px;color:#102033;word-break:break-word;">'+(esc2(first(r,['維護檢查人員'])) || '<span class="muted">未填</span>')+'</div></div>'+
+      '<div style="flex:1;min-width:0;border:1px solid #e2e8f0;border-radius:10px;padding:6px;text-align:center;background:#fff;">'+
+        '<div style="font-size:12px;font-weight:900;color:#526987;margin-bottom:3px;">QA</div><div style="font-size:13px;color:#102033;word-break:break-word;">'+(esc2(first(r,['QA檢查人員'])) || '<span class="muted">未填</span>')+'</div></div>'+
+    '</div>';
+  }
+  window.formatHistoryDate = function(v){
+    var s = txt(v);
+    return s || '未提供日期';
+  };
+  window.renderHistoryCards = function(records){
+    var list = $id('historyList');
+    if(!list) return;
+    records = Array.isArray(records) ? records : [];
+    var start = filterDateKeyFromInput('historyStartDate');
+    var end = filterDateKeyFromInput('historyEndDate');
+    var kw = (($id('historySearch') && $id('historySearch').value) || '').toLowerCase().trim();
+    var filtered = records.filter(function(r){
+      var dk = dateKey(first(r,['日期']));
+      var okDate = (!start || (dk !== null && dk >= start)) && (!end || (dk !== null && dk <= end));
+      var okKw = !kw || JSON.stringify(r || {}).toLowerCase().indexOf(kw) >= 0;
+      return okDate && okKw;
+    });
+    if(!filtered.length){
+      list.innerHTML = '<div class="muted small" style="text-align:center;padding:18px 8px;">查無符合條件的歷史紀錄</div>';
+      return;
+    }
+    list.innerHTML = filtered.map(function(r, i){
+      var date = rawDate(r);
+      var machine = first(r,['機台']) || '未填機台';
+      var part = first(r,['料號']) || '未填料號';
+      var item = first(r,['異常項目']) || '未填異常項目';
+      return '<article class="historyCard" role="button" tabindex="0" data-history-card="1" style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin-bottom:6px;box-shadow:none;overflow:hidden;cursor:pointer;">'+
+        '<div class="historyCardSummary" style="display:flex;align-items:center;gap:8px;padding:8px 12px;min-width:0;">'+
+          '<span style="flex:0 0 auto;font-size:12px;color:#64748b;white-space:nowrap;">'+esc2(date)+'</span>'+
+          '<span style="flex:0 0 auto;font-size:12px;font-weight:900;color:#1d4ed8;white-space:nowrap;">'+esc2(machine)+'</span>'+
+          '<span style="flex:0 0 auto;font-size:12px;font-weight:900;color:#0f172a;white-space:nowrap;">'+esc2(part)+'</span>'+
+          '<span style="flex:1;min-width:0;font-size:13px;font-weight:900;color:#102033;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">'+esc2(item)+'</span>'+
+          '<span class="historyArrow" style="flex:0 0 auto;color:#94a3b8;font-size:12px;">▾</span>'+
+        '</div>'+
+        '<div class="historyCardDetail" style="display:none;padding:10px 12px 12px;border-top:1px solid #eef2f7;background:#fbfdff;font-size:13px;line-height:1.55;">'+
+          row('日期', date, false)+
+          row('機台', first(r,['機台']), false)+
+          row('異常項目', first(r,['異常項目']), false)+
+          row('類別', first(r,['類別']), false)+
+          row('料號', first(r,['料號']), false)+
+          row('批號', first(r,['批號']), false)+
+          row('問題描述', first(r,['問題描述']), true)+
+          row('結果/後續追蹤', first(r,['結果/後續追蹤','結果 / 後續追蹤']), true)+
+          peopleRow(r)+
+        '</div>'+
+      '</article>';
+    }).join('');
+    Array.prototype.forEach.call(list.querySelectorAll('[data-history-card="1"]'), function(card){
+      card.addEventListener('click', function(){
+        var detail = card.querySelector('.historyCardDetail');
+        var arrow = card.querySelector('.historyArrow');
+        var open = detail && detail.style.display === 'block';
+        if(detail) detail.style.display = open ? 'none' : 'block';
+        if(arrow) arrow.textContent = open ? '▾' : '▴';
+      });
+      card.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ev.preventDefault(); card.click();}
+      });
+    });
+  };
 })();
 </script>
 
