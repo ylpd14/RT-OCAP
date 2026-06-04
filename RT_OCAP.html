@@ -13085,7 +13085,7 @@ const DEFAULT_FLOWS = [
     "_v63Layouted": true
   }
 ];
-const LS_KEY='rt_ocap_exported_html_clean_20260522_140952';
+const LS_KEY='rt_ocap_exported_html_clean_20260604';
 let flows=loadFlows(), editorUnlocked=false, currentCategory='設備異常', currentFlowId=(flows[0]&&flows[0].id)||'', selectedNodeId='', selectedEdgeId='', zoom=1, lineDrag=null, dragState=null, clickLineMode=false, clickSourceId='', runState={flowId:'',nodeId:'',path:[]};
 let historyLock=false, undoStack=[], redoStack=[];
 function $(id){return document.getElementById(id)}function esc(s){return (s??'').toString().replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}function deep(v){return JSON.parse(JSON.stringify(v))}function fmtNow(){const d=new Date(),p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())+' '+p(d.getHours())+':'+p(d.getMinutes())}function sanitizeFlows(arr){(arr||[]).forEach(f=>{const bad=new Set((f.nodes||[]).filter(n=>(n.title||'').trim()==='流程結束').map(n=>n.id));if(bad.size){f.nodes=(f.nodes||[]).filter(n=>!bad.has(n.id));f.edges=(f.edges||[]).filter(e=>!bad.has(e.from)&&!bad.has(e.to));if(bad.has(f.startNodeId))f.startNodeId=f.nodes[0]?f.nodes[0].id:'';}});return arr}
